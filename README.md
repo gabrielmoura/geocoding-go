@@ -10,3 +10,8 @@ Também é possível buscar a latitude e longitude do endereço, passando o nome
 - Cambalache
 
 ## Captura de tela
+![](art/2024-02-15-195039_hyprshot.png)
+![](art/2024-02-15-194834_hyprshot.png)
+![](art/2024-02-15-194920_hyprshot.png)
+![](art/2024-02-15-194938_hyprshot.png)
+![](art/2024-02-15-195021_hyprshot.png)
