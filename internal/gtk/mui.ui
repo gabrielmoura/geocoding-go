@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.16.0 -->
+<interface>
+    <!-- interface-name mui.ui -->
+    <!-- interface-authors Gabriel Moura -->
+    <requires lib="gtk" version="4.8"/>
+    <object class="GtkWindow" id="MainWindow">
+        <child>
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="GtkLabel">
+                        <property name="justify">center</property>
+                        <property name="label">Bem Vindo ao GeoCoding</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkLabel">
+                        <property name="label">Resultado</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkTextView" id="output"/>
+                </child>
+                <child>
+                    <object class="GtkBox">
+                        <child>
+                            <object class="GtkLabel">
+                                <property name="label">Endereço:</property>
+                                <property name="margin-bottom">3</property>
+                                <property name="margin-end">12</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkEntry" id="address">
+                                <property name="margin-bottom">3</property>
+                                <property name="margin-end">12</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="btnAddress">
+                                <property name="label">Buscar</property>
+                                <property name="margin-bottom">3</property>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkBox">
+                        <child>
+                            <object class="GtkLabel">
+                                <property name="label">CEP:</property>
+                                <property name="margin-bottom">3</property>
+                                <property name="margin-end">46</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkEntry" id="cep">
+                                <property name="margin-bottom">3</property>
+                                <property name="margin-end">12</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="btnCep">
+                                <property name="label">Buscar</property>
+                                <property name="margin-bottom">3</property>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <!-- Custom fragments -->
+        <property name="default-width">300</property>
+        <property name="default-height">300</property>
+        <property name="title">GeoCoding</property>
+    </object>
+    <object class="GtkDialog" id="dialogError">
+        <child>
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="GtkLabel">
+                        <property name="label">Erro:</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkTextView" id="outError"/>
+                </child>
+            </object>
+        </child>
+        <!-- Custom fragments -->
+        <property name="default-width">300</property>
+        <property name="default-height">300</property>
+        <property name="title">Erro encontrado</property>
+    </object>
+</interface>

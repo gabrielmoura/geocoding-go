@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.13.1" target_tk="gtk-4.0">
+  <ui>
+	(1,None,"mui.ui","mui.ui",None,None,"Gabriel Moura",None,None,None,None)
+  </ui>
+  <ui_library>
+	(1,"gtk","4.8",None)
+  </ui_library>
+  <object>
+	(1,1,"GtkWindow","MainWindow",None,None,None,None,-1,"&lt;property name=\"default-width\"&gt;300&lt;/property&gt;\n&lt;property name=\"default-height\"&gt;300&lt;/property&gt;\n&lt;property name=\"title\"&gt;GeoCoding&lt;/property&gt;"),
+	(1,2,"GtkBox",None,1,None,None,None,-1,None),
+	(1,3,"GtkLabel",None,2,None,None,None,None,None),
+	(1,4,"GtkBox",None,2,None,None,None,3,None),
+	(1,5,"GtkLabel",None,4,None,None,None,None,None),
+	(1,6,"GtkEntry","address",4,None,None,None,1,None),
+	(1,7,"GtkButton","btnAddress",4,None,None,None,2,None),
+	(1,8,"GtkTextView","output",2,None,None,None,2,None),
+	(1,9,"GtkLabel",None,2,None,None,None,1,None),
+	(1,10,"GtkBox",None,2,None,None,None,4,None),
+	(1,11,"GtkLabel",None,10,None,None,None,None,None),
+	(1,12,"GtkEntry","cep",10,None,None,None,1,None),
+	(1,13,"GtkButton","btnCep",10,None,None,None,2,None),
+	(1,14,"GtkDialog","dialogError",None,None,None,None,-1,"&lt;property name=\"default-width\"&gt;300&lt;/property&gt;\n&lt;property name=\"default-height\"&gt;300&lt;/property&gt;\n&lt;property name=\"title\"&gt;Erro encontrado&lt;/property&gt;"),
+	(1,15,"GtkBox",None,14,None,None,None,-1,None),
+	(1,16,"GtkLabel",None,15,None,None,None,None,None),
+	(1,17,"GtkTextView","outError",15,None,None,None,1,None)
+  </object>
+  <object_property>
+	(1,2,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,3,"GtkLabel","justify","center",None,None,None,None,None,None,None,None,None),
+	(1,3,"GtkLabel","label","Bem Vindo ao GeoCoding",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkLabel","label","Endereço:",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkWidget","margin-bottom","3",None,None,None,None,None,None,None,None,None),
+	(1,5,"GtkWidget","margin-end","12",None,None,None,None,None,None,None,None,None),
+	(1,6,"GtkWidget","margin-bottom","3",None,None,None,None,None,None,None,None,None),
+	(1,6,"GtkWidget","margin-end","12",None,None,None,None,None,None,None,None,None),
+	(1,7,"GtkButton","label","Buscar",None,None,None,None,None,None,None,None,None),
+	(1,7,"GtkWidget","margin-bottom","3",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkLabel","label","Resultado",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkLabel","label","CEP:",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkWidget","margin-bottom","3",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkWidget","margin-end","46",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-bottom","3",None,None,None,None,None,None,None,None,None),
+	(1,12,"GtkWidget","margin-end","12",None,None,None,None,None,None,None,None,None),
+	(1,13,"GtkButton","label","Buscar",None,None,None,None,None,None,None,None,None),
+	(1,13,"GtkWidget","margin-bottom","3",None,None,None,None,None,None,None,None,None),
+	(1,15,"GtkOrientable","orientation","vertical",None,None,None,None,None,None,None,None,None),
+	(1,16,"GtkLabel","label","Erro:",None,None,None,None,None,None,None,None,None)
+  </object_property>
+</cambalache-project>
